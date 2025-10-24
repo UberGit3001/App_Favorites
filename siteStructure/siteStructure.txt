@@ -1,0 +1,27 @@
+<pres>
+
+/apps-favorites/
+│
+├── index.html
+├── spotify.html
+├── duolingo.html
+├── tiktok.html
+│
+├── /css/
+│   ├── style.css
+│   ├── spotify.css
+│   ├── duolingo.css
+│   ├── tiktok.css
+│
+└── /images/
+    ├── logos/
+    │   ├── spotify.png
+    │   ├── duolingo.png
+    │   ├── tiktok.png
+    ├── screenshots/
+    │   ├── spotify1.jpg
+    │   ├── duolingo1.jpg
+    │   ├── tiktok1.jpg
+
+
+</pres>
