@@ -1,0 +1,112 @@
+/* =======================================
+   SPOTIFY STYLE - Page spotify.html
+   ======================================= */
+
+:root {
+  --spotify-green: #1db954;
+  --spotify-dark: #121212;
+  --spotify-light: #b3b3b3;
+  --font-spotify: 'Raleway', sans-serif;
+  --transition: all 0.3s ease;
+}
+
+/* Base */
+body {
+  font-family: var(--font-spotify);
+  background: var(--spotify-dark);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #000;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-app {
+  width: 60px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+nav a {
+  color: var(--spotify-green);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Sections */
+.intro {
+  padding: 3rem 1rem;
+  background: linear-gradient(45deg, #1db954, #1ed760);
+  color: #000;
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.description {
+  padding: 2rem 1rem;
+  background: #181818;
+}
+
+/* Screenshots */
+.screenshots {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.screenshots img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.screenshots img:hover {
+  transform: scale(1.05);
+}
+
+/* Download */
+#download {
+  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--spotify-green);
+  color: #000;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5rem;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 1rem;
+}
